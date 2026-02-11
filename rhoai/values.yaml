@@ -1,0 +1,5 @@
+rhoai:
+  namespace: redhat-ods-operator
+  channel: fast-3.x
+  installPlanApproval: Automatic
+  operator: openshift-ai-operator
