@@ -1,0 +1,10 @@
+operator:
+  channel: stable 
+  source: redhat-operators
+  sourceNamespace: openshift-marketplace
+  installPlanApproval: Automatic
+
+istio:
+  namespace: istio-system
+istioCni:
+  namespace: istio-cni

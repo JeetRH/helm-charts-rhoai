@@ -1,5 +1,9 @@
-rhoai:
+operator:
   namespace: redhat-ods-operator
   channel: fast-3.x
   installPlanApproval: Automatic
-  operator: openshift-ai-operator
+  source: redhat-operators
+  sourceNamespace: openshift-marketplace
+
+dsc:
+  dashboardState: Managed

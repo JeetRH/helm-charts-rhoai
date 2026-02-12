@@ -12,7 +12,7 @@ spec:
     aipipelines:
       managementState: Removed
     dashboard:
-      managementState: Managed
+      managementState: {{ .Values.dsc.dashboardState }}
     feastoperator:
       managementState: Removed
     kserve:

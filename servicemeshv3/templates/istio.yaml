@@ -1,0 +1,15 @@
+kind: Istio
+apiVersion: sailoperator.io/v1
+metadata:
+  name: default
+spec:
+  namespace: {{ .Values.istio.namespace }}
+  updateStrategy:
+    inactiveRevisionDeletionGracePeriodSeconds: 30
+    type: InPlace
+  # version: Operator will automatically select the default supported version bundled
+  values:
+    meshConfig:
+      discoverySelectors:
+        - matchLabels:
+            istio-discovery: enabled

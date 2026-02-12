@@ -7,4 +7,4 @@ metadata:
     "helm.sh/hook-weight": "-10"
   labels:
     openshift.io/cluster-monitoring: 'true'
-  name: {{ .Values.rhoai.namespace }}
+  name: {{ .Values.operator.namespace }}

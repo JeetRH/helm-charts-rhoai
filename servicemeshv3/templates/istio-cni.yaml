@@ -1,0 +1,7 @@
+kind: IstioCNI
+apiVersion: sailoperator.io/v1
+metadata:
+  name: default
+spec:
+  namespace: {{ .Values.istioCni.namespace }}
+  # version: Operator will automatically select the default supported version bundled
