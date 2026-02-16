@@ -9,5 +9,10 @@ spec:
     metrics: {}
     namespace: redhat-ods-monitoring
   trustedCABundle:
-    customCABundle: ''
     managementState: Managed
+    {{- if .Values.customCABundle }}
+    customCABundle: |
+      {{- .Values.customCABundle | nindent 6 }}
+    {{- else }}
+    customCABundle: ""
+    {{- end }}
