@@ -1,0 +1,16 @@
+name: helm-docs
+on:
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
+  pull_request: {}
+jobs:
+  docs-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run helm-docs
+        uses: losisin/helm-docs-github-action@v1
+        with:
+          git-push: true
