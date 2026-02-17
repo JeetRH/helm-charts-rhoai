@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: v2
 name: rhoai
 description: A Helm chart for RHOAI 3.2.0 Installation on bare metal
 type: application
