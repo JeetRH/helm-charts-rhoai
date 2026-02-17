@@ -1,0 +1,6 @@
+operator:
+  namespace: kuadrant-system
+  channel: stable
+  installPlanApproval: Automatic
+  source: redhat-operators
+  sourceNamespace: openshift-marketplace

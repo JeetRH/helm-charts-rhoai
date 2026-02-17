@@ -2,6 +2,9 @@ apiVersion: dscinitialization.opendatahub.io/v2
 kind: DSCInitialization
 metadata:
   name: default-dsci
+  annotations:
+    "helm.sh/hook": post-install
+    "helm.sh/hook-weight": "5"
 spec:
   applicationsNamespace: redhat-ods-applications
   monitoring:
