@@ -9,7 +9,7 @@ jobs:
   helm-lint:
     runs-on: ubuntu-latest
     env:
-      HELM_VERSION: 3.9.4
+      HELM_VERSION: 4.0.2
       HELM_DIRS: .
     steps:
       - name: Install Helm
