@@ -2,8 +2,8 @@ name: Manifests Validation
 on:
   pull_request: {}
   push:
-    branches-ignore:
-      - 'gh-pages'
+    branches:
+      - 'main'
 
 jobs:
   helm-lint:
